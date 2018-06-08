@@ -5,6 +5,7 @@ Parse.Cloud.define('hello', function(req, res) {
 
 Parse.Cloud.afterSave("GameScore", function(request) {
   console.log('###-----Begin-----###');
+  console.log("Server Url = " + Parse.serverURL);
   console.log(request);
 });
 
